@@ -1,0 +1,18 @@
+{
+  "name": "apolloserverv2",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start:dev": "lsof -nti:4001 | xargs kill -9 && nodemon --watch ./src/apolloServer.js",
+    "start": "node ./src/apolloServer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.19.2",
+    "graphql": "^15.5.0",
+    "nodemon": "^2.0.7",
+    "schemaglue": "^4.0.6"
+  }
+}
