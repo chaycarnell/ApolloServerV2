@@ -18,6 +18,7 @@ const server = new ApolloServer({
   typeDefs: gql(schema),
   resolvers: resolver,
   playground: process.env.NODE_ENV !== "production",
+  introspection: process.env.NODE_ENV !== "production",
   formatError: (error) => errorHandler(error),
   logger,
   plugins: [loggerPlugin],
